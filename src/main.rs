@@ -1,3 +1,7 @@
+extern crate vsop87;
+mod integration;
+mod bodies;
+
 fn main() {
-    println!("Hello, world!");
+    fn bodies::planets()
 }
