@@ -71,63 +71,54 @@ pub fn planets() -> [Parameters; 8] {
     let (positions, velocities) = data_extraction();
 
     let sun = Parameters {
-        name: "sun",
         position: [0.0, 0.0, 0.0],
         velocity: [0.0, 0.0, 0.0],
         acceleration: [0.0, 0.0, 0.0], 
         mass: 1_988_400e24,
     };
     let mercury = Parameters {
-        name: "mercury",
         position: positions[0],
         velocity: velocities[0],
         acceleration: [0.0,0.0,0.0], 
         mass: 0.33e24,
     };
     let venus = Parameters {
-        name: "venus", 
         position: positions[1],
         velocity: velocities[1],
         acceleration: [0.0,0.0,0.0], 
         mass: 4.87e24,
     };
     let earth = Parameters {
-        name: "earth", 
         position: positions[2],
         velocity: velocities[2],
         acceleration: [0.0,0.0,0.0], 
         mass: 5.97e24,
     };
     let mars = Parameters {
-        name: "mars", 
         position: positions[3],
         velocity: velocities[3],
         acceleration: [0.0,0.0,0.0], 
         mass: 0.642,
     };
     let jupiter = Parameters {
-        name: "jupiter", 
         position: positions[4],
         velocity: velocities[4],
         acceleration: [0.0,0.0,0.0], 
         mass: 1898e24,
     };
     let saturn = Parameters {
-        name: "saturn", 
         position: positions[5],
         velocity: velocities[5],
         acceleration: [0.0,0.0,0.0], 
         mass: 568e24,
     };
     let uranus = Parameters {
-        name: "uranus", 
         position: positions[6],
         velocity: velocities[6],
         acceleration: [0.0,0.0,0.0], 
         mass: 86.8e24,
     };
     let neptune = Parameters {
-        name: "neptune", 
         position: positions[7],
         velocity: velocities[7],
         acceleration: [0.0,0.0,0.0], 
